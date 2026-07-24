@@ -16,7 +16,7 @@ app.post('/api/chat', async (req, res) => {
 
         // Se utiliza el modelo recomendado gemini-2.5-flash
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash-lite', 
+            model: 'gemini-flash-latest', 
             contents: messages,
             config: {
                 temperature: 0.7,
